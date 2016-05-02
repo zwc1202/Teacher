@@ -1,6 +1,7 @@
 package com.yysy.teacher;
 /*
   ¿œ ¶¿‡
+  @auhor Tu Laiyi2016/5/2
 */
 
 public class Teacher{

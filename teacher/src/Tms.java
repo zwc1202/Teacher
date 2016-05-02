@@ -38,9 +38,7 @@ public class Tms {
 	  @author Gan Ying
 	*/
 	public Teacher findById(long id){
-		//1,通过id找位置
 		int num = findIndexById(id);
-		//2,把该位置上的对象返回
 		return num==-1?null:teac[num];
 	}
 	/**
@@ -98,7 +96,10 @@ public class Tms {
 		System.out.println("*exit. 退出");
 		System.out.println("**************************************");
 	}
-
+	/**
+		主方法
+		@auhor Zhang Wanchen
+	*/
 	public static void main(String[] args){
 		Tms tms = new Tms();	
 		Scanner sc = new Scanner(System.in);
@@ -116,7 +117,7 @@ public class Tms {
 					System.out.println("总计 "+tms.index+"人");
 					break;
 				}
-				case "2":{//录入老师信息
+				case "2":{//添加老师信息
 					while(true){
 						System.out.println("请输入老师信息【id#name#course】或者输入【break】返回主菜单");
 						String teaStr = sc.nextLine();
